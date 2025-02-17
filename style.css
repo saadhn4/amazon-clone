@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Roboto, Arial;
+  padding-top: 60px;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(19, 25, 33);
+  color: white;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.header-logo {
+  width: 100px;
+}
+
+
+
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle button {
+  width: 43px;
+  height: 43px;
+  border-radius: 0 5px 5px 0;
+  background-color: rgb(254, 189, 105);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.header .middle input {
+  width: 750px;
+  height: 43px;
+  padding: 12px 14px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  outline: none
+}
+
+.header .middle input::placeholder {
+  font-size: 16px;
+}
+
+.right {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  font-size: 14px;
+}
+
+
+.right a {
+  text-decoration: none;
+}
+
+.right a:visited {
+  color: white;
+}
+
+.right span,
+.cart-text {
+  font-weight: 700;
+}
+
+.product-section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 25px;
+  width: 300px;
+  border-right: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.product .top-row img {
+  height: 200px;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.product .top-row {
+  margin-bottom: 15px;
+}
+
+.product-name {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.stars-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.stars-row span {
+  color: #017cb6;
+}
+
+.stars-row img {
+  height: 20px;
+  margin-right: 8px;
+}
+
+.product-price {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+button {
+  background-color: rgb(255, 216, 20);
+  border: none;
+  padding: 8px;
+  border-radius: 20px;
+  padding: 8px 80px;
+  transition: opacity 0.2s;
+}
+
+button:hover {
+  opacity: 0.7;
+}
